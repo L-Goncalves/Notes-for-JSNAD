@@ -51,7 +51,7 @@ This will print 2 because console.log is used to explicitly write the result of 
 
 When used with print flag the same will print 2 and then print undefined because console.log returns undefined; so the result of the expression is undefined:
 
-`node -p "console.log(1+1)`
+`node -p "console.log(1+1)"`
 
 
 ### Preloaded CommonJS Modules
