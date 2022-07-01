@@ -27,3 +27,6 @@ To check the syntax of a code we can use `--check` or `-c` flag.
 
 
 `node -c app.js` : basically it'll check the syntax of app.js <b>-c is a short for --check<b>.
+
+
+If the code parses successfully, there will be no output. If the code does not parse and there is a syntax error, the error will be printed to the terminal.
