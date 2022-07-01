@@ -30,3 +30,9 @@ To check the syntax of a code we can use `--check` or `-c` flag.
 
 
 If the code parses successfully, there will be no output. If the code does not parse and there is a syntax error, the error will be printed to the terminal.
+
+
+### Dynamic Evaluation
+Node can directly evaluate from the shell. This is very useful for quickly checking a code snipeet or for creating very small cross-platform commands that use Javascript and Node core API's
+
+
