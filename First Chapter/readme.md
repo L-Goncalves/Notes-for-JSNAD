@@ -36,3 +36,20 @@ If the code parses successfully, there will be no output. If the code does not p
 Node can directly evaluate from the shell. This is very useful for quickly checking a code snipeet or for creating very small cross-platform commands that use Javascript and Node core API's
 
 
+There are two flags we can use to evaluate code the `-p` or `--print` that basically will evaluate an expression and print the result. the `-e` or `--eval` flag evaluates without printing the result of the expression.
+
+Examples:
+
+`node --eval "1+1"`
+output: will not print anything because the expression is evaluated and okay.
+
+`node --print "1+1"`
+output: it will print 2
+
+`node -e "console.log(1+1)"` 
+This will print 2 because console.log is used to explicitly write the result of 1+1 to the terminal.
+
+When used with print flag the same will print 2 and then print undefined because console.log returns undefined; so the result of the expression is undefined:
+
+`node -p "console.log(1+1)`
+
