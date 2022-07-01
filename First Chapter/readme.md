@@ -53,3 +53,20 @@ When used with print flag the same will print 2 and then print undefined because
 
 `node -p "console.log(1+1)`
 
+
+### Preloaded CommonJS Modules
+
+The command line flag `-r` or `--require` can be used to preload CommonJS module before anything else loads.
+
+Example:
+
+`node -r /preload.js app.js`
+
+preload.js will be loaded first because it's used with the flag `require` which makes it required.
+
+When it is useful to use this?
+
+Preloading Modules is useful when using consuming modules that instrument or configure the process in some way. One example would be the `dotenv` module.
+
+
+### Stack Trace Limit
